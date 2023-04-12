@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login/Register System with Firebase</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Login/Register System with Firebase</h1>
+		<form id="login-form" class="form">
+			<h2>Login</h2>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit">Login</button>
+		</form>
+		<form id="register-form" class="form">
+			<h2>Register</h2>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+			<label for="confirm-password">Confirm Password:</label>
+			<input type="password" id="confirm-password" name="confirm-password" required>
+			<button type="submit">Register</button>
+		</form>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
